@@ -18,4 +18,4 @@
 
 ### 4. Outros
 #### [Estatística Descritiva - Análise de Survey](https://github.com/suzanaph/data-science-portfolio/blob/master/estatistica/survey-udacity/report-survey-udacity.pdf)
-Projeto pertencente ao curso Introdução a Estatística Descritiva (Udacity)
+      Projeto pertencente ao curso Introdução a Estatística Descritiva (Udacity)
