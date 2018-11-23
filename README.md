@@ -6,8 +6,16 @@
 # Meu caminho de aprendizado em Ciência dos Dados
 
 
-1. Python
+### 1. Linguagens
+#### Reforço da sintaxe do Python  
+      Projeto pertencente ao curso Fundamentos de Data Science I (Udacity)
   
-2. Análise de Dados
+### 2. Análise de Dados
+#### Análise simples utilizando Python e Jupyter Notebook para prática de reports
+Projeto pertencente ao curso Fundamentos de Data Science I (Udacity)
 
-3. Machine Learning
+### 3. Machine Learning
+
+### 4. Outros
+#### Estatística Descritiva - Análise de Survey
+Projeto pertencente ao curso Introdução a Estatística Descritiva (Udacity)
