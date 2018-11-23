@@ -17,5 +17,5 @@
 ### 3. Machine Learning
 
 ### 4. Outros
-#### Estatística Descritiva - Análise de Survey
+#### [Estatística Descritiva - Análise de Survey](https://github.com/suzanaph/data-science-portfolio/blob/master/estatistica/survey-udacity/report-survey-udacity.pdf)
 Projeto pertencente ao curso Introdução a Estatística Descritiva (Udacity)
