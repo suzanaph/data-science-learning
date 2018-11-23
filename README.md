@@ -1,5 +1,8 @@
 ### > Never stop learning <
 
+![](https://github.com/suzanaph/data-science-portfolio/giphy.gif)
+      
+
 # Meu caminho de aprendizado em Ciência dos Dados
 
 
