@@ -1,8 +1,7 @@
-### Let's learn it
+### > Never stop learning <
 
-# Meu caminho de aprendizado em Ciência dos Dados]
+# Meu caminho de aprendizado em Ciência dos Dados
 
-(https://gph.is/2jabRci)
 
 1. Python
   
