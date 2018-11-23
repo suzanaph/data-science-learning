@@ -7,7 +7,7 @@
 
 
 ### 1. Linguagens
-#### Reforço da sintaxe do Python  
+#### [Reforço da sintaxe do Python](https://github.com/suzanaph/data-science-portfolio/blob/master/python/chicago_bikeshare.py)  
       Projeto pertencente ao curso Fundamentos de Data Science I (Udacity)
   
 ### 2. Análise de Dados
