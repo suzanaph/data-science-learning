@@ -10,7 +10,7 @@
 #### [Reforço da sintaxe do Python](https://github.com/suzanaph/data-science-portfolio/blob/master/python/chicago_bikeshare.py)  
       Projeto pertencente ao curso Fundamentos de Data Science I (Udacity)
       
-### [Reforço de SQL + Report]
+### [Reforço de SQL + Report](https://github.com/suzanaph/data-science-portfolio/tree/master/SQL)
       Projeto pertencente ao curso Fundamentos de Data Science II (Udacity)
       
 ### 2. Análise de Dados
