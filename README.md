@@ -9,7 +9,10 @@
 ### 1. Linguagens
 #### [Reforço da sintaxe do Python](https://github.com/suzanaph/data-science-portfolio/blob/master/python/chicago_bikeshare.py)  
       Projeto pertencente ao curso Fundamentos de Data Science I (Udacity)
-  
+      
+### [Reforço de SQL + Report]
+      Projeto pertencente ao curso Fundamentos de Data Science II (Udacity)
+      
 ### 2. Análise de Dados
 #### [Análise simples utilizando Python e Jupyter Notebook para prática de reports](https://github.com/suzanaph/data-science-portfolio/blob/master/analise-de-dados/titanic/Report-titanic.ipynb)
       Projeto pertencente ao curso Fundamentos de Data Science I (Udacity)
