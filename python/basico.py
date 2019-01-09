@@ -4,6 +4,7 @@ print('H3ll0 W0rld')
 # ** -> (exponencial) 
 # % -> módulo 
 # // -> divisão inteira
+# += -= *= /= %=
 
 
 #Concatenação de String:
@@ -63,9 +64,78 @@ def foo():
 variable = 'val'
 foo()
 
-# Geremciamento de Exceção
+# Gerenciamento de Exceção
 try:
 except nome_do_erro:
+
+# Lists
+    # Aceita diferentes tipos de dados
+    # Passam valores por -> referência <-
+    # Index começa em 0
+lista = ['a', 'b', 1, -2.0, True]
+lista[0] retorna 'a'
+
+    #Pode conter outras listas
+[['a', 'b'], [1,2,3]]
+
+    #Index Negativo
+lista[-1] retorna True
+
+    #Slices de uma list
+
+lista[0:2] retorna ['a', 'b', 1]
+lista[:1] retorna ['a', 'b']
+lista[3:] retorna [-2.0, True]
+
+    #Tamanho da lista
+len(lista)
+
+    #Remover elemento da lista - reindexa após
+del lista[1]
+
+    #Operadores
+        #in
+'a' in lista retorna True
+        #not in
+'a' not in lista retorna False
+
+    #Achar Index
+lista.index('b') retorna 1
+
+    #Adicionar Item no Final
+lista.append(item)
+
+    #Adicionar Item em posição específica
+lista.insert(index, item)
+
+    #Remover Valor - apenas a primeira apariação
+lista.remove('a')
+
+    #Ordenar - apenas pra lista com mesmo tipo de dados
+lista.sort()
+
+    #Ordenar decrescente
+lista.sort(reverse=True)
+
+    #Valor por cópia
+import copy
+nova_lista = copy.copy(lista)
+
+    #String se comporta como lista de caracteres. Maioria dos métodos são aplicáveis
+    # Lista - mutável | String - imutável
+
+#Tupla
+    #Listas imutáveis
+tupla = ('hello', 42, True)
+    
+    #Cast
+tuple(lista)
+list(tupla)
+
+
+
+
+
 
 
 
