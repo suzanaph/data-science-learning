@@ -6,7 +6,6 @@ print('H3ll0 W0rld')
 # // -> divisão inteira
 # += -= *= /= %=
 
-
 #Concatenação de String:
 # 'str1' + 'str2'
 
@@ -16,7 +15,6 @@ print('Str' * 5)
 
 #Tamanho da string
 len('variavel')
-
 
 # Input:  input() - retorna sempre string
 answer = input('Digite uma palavra')
@@ -82,7 +80,6 @@ lista[0] retorna 'a'
 lista[-1] retorna True
 
     #Slices de uma list
-
 lista[0:2] retorna ['a', 'b', 1]
 lista[:1] retorna ['a', 'b']
 lista[3:] retorna [-2.0, True]
@@ -96,6 +93,7 @@ del lista[1]
     #Operadores
         #in
 'a' in lista retorna True
+
         #not in
 'a' not in lista retorna False
 
@@ -131,6 +129,43 @@ tupla = ('hello', 42, True)
     #Cast
 tuple(lista)
 list(tupla)
+
+#Dicionário
+    #index pode ser diferente de int
+    #ordem não importa. 
+    #key-value pair
+dicionario = {'size': 'fat', 'color':'green' }
+dicionario['size'] retorna 'fat'
+
+dicionario.keys() - retorna ['size',  'color'] #dict_keys datatype
+dicionario.values() - retorna ['fat',  'green'] #dict_values datatype
+dicionario.items() - retorna ('size', 'fat')('color','red') #dict_items datatype
+
+    #Checagem de Key
+'size' in dicionario.keys() retorna True
+
+    #Checagem de Value
+'size' in dicionario.values() retorna False
+
+    #Valor default caso key não exista
+dicionario.get('wigth', 0) retorna 0
+
+    #Valor default direto no dicionario
+dicionario.setdefault('color', 'green')
+
+    #Dicionários dentro de dicionários
+
+allGuests = {'Alice': {'apple': 1, 'banana': 2},
+             'Bob': {'bread': 5, 'soda': 1}
+             'Tom': {'apple:': 2}}
+
+def total(guests, item):
+    qtd = 0
+    for k, i in guests.items():
+        qtd += v.get(item, 0)
+    return qtd
+
+total(allGuests, 'apple') retorna 3
 
 
 
