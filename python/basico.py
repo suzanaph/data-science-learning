@@ -167,9 +167,49 @@ def total(guests, item):
 
 total(allGuests, 'apple') retorna 3
 
+#Manipulação de Strings
+
+    #Escape caracters
+    \' para '
+    \" para "
+    \t para tab 
+    \n para nova linha
+    \\ para \
+
+    #in e not são válidos
+'Hello' in 'Hello World' retorna True
+
+'str'.upper() #tudo em maiúsculo
+'str'.lower() #tudo em minusculo
+
+string = 'strValue'
+string.startswith('str') retorna True
+string.endswith('str') retorna False
+
+    #join() coloca str entre as strings
+', '.join(['a', 'b', 'c']) retorna 'a, b, c'
+
+    #split() coloca em um array de acordo com o argumento
+"Meu nome é Reginalda".split(' ') retorna ['Meu', 'nome', 'é', 'Reginalda']
+
+    #Padding
+'Hello'.rjust(10) retorna '     Hello' #10 espaços + string de 5 caracteres
+'Hello'.ljust(10) retorna 'Hello     '
+'Hello'.rjust(10, '*') retorna '*****Hello'
+'Hello'.center(20,"_") retorna '______Hello_______'
+
+    #strip() -> remove whitespace no inicio e final
+'   Hello   '.strip() retorna 'Hello'
+'   Hello   '.rstrip() retorna '   Hello'
+'xHellox'.strip('x')  retorna 'Hello'
+
+    #Copy & Paste CLIPBOARD
+import pyperclip as pc 
+pc.copy('abc')
+pc.paste() retorna 'abc'
 
 
-
+ 
 
 
 
