@@ -15,6 +15,10 @@
 ### 2. Análise de Dados
 #### [Análise simples utilizando Python e Jupyter Notebook para prática de reports](https://github.com/suzanaph/data-science-portfolio/blob/master/analise-de-dados/titanic/Report-titanic.ipynb)
       Projeto pertencente ao curso Fundamentos de Data Science I (Udacity)
+      
+### 3. Data Wrangle
+#### [We Rate Dogs]
+      Projeto pertencente ao curso Fundamentos de Data Science II (Udacity)
 
 ### 3. Machine Learning
 
