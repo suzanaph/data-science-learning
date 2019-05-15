@@ -24,31 +24,118 @@
     > scalac path .scala   (compila)
     > scala path (executa)
 
-#### Biblioteca TypeSafeConfig
+### Biblioteca TypeSafeConfig
 
 - Serve para configuração de software
 - 
 
 
-#### Declaração de Variáveis
+### Declaração de Variáveis
 
 - Val => variável imutável (constante)
 - Var => variável que pode mudar
 
 ##### Impicidamente 
-    > var nome = "valor"
-    > val nome = "valor"
+
+``` scala
+var nome = "valor"
+val nome = "valor"
+```
 
 ##### Explicidamente
-    > var nome: tipo  = "valor"
-    > val nome: tipo  = "valor"
-#### Interpolação de Strings
+
+``` scala
+var nome: tipo  = "valor"
+val nome: tipo  = "valor"
+```
+
+### Interpolação de Strings
 
 - Usa s antes para indicar interpolação
 - Usa $ para concatenar variáveis
     
-    > val nome = s"string$valor"
+ ``` scala   
+ val nome = s"string$valor"
+ ``` 
 
+### Métodos
+
+``` scala   
+def nomeMetodo(nomeParametro: Tipo): TipoRetorno = { return Retorno}
+```
+
+Retorno será sempre a última linha, na ausência da palavra return  
+Boa prática: explicitar tipos
+
+##### Valores Default
+
+``` scala   
+def nomeMetodo(nomeParametro1: String = "", nomeParametro2: String = "") = ???
+```
+
+Para especificar os parâmetros, deve-se utilizar a chamada nomeada  
+Não é necessário especificar se estão definidos em ordem
+
+``` scala
+//Segundo parâmetro
+nomeMetodo(nomeParametro2 = "Valor")
+
+//Parâmetros em ordem, setado para nomeParametro1
+nomeMetodo("Valor")
+
+```
+
+### Classes
+
+``` scala   
+class NomeDaClasse(atributo: TipoAtributo)
+```
+
+##### Construtores
+
+Pode criar N construtores auxiliares  
+Construtores auxiliares invocam o contrutor principal
+
+``` scala   
+class NomeDaClasse(atributo: TipoAtributo) {
+  def this() = this("")
+}
+```
+
+No código acima o atributo é privado e não pode ser acessado externamente  
+Para acessar externamente deve-se utilizar o val/var
+
+``` scala   
+class NomeDaClasse(val atributo: TipoAtributo) {
+  def this() = this("")
+}
+```
+
+##### Object
+
+- Classe com comportamento Singleton
+
+``` scala   
+object Nome {
+  val valo1 = ""
+  val valor2 = ""
+}
+
+//Acesso
+Nome.valor1
+```
+
+Erro ao utilizar new Nome()
+
+##### Classe Abstrada
+
+``` scala   
+// Definição
+abstract class Nome(val attr : Tipo)
+
+// Uso
+object NomeObject extends Nome("valor")
+```
 
 
 
