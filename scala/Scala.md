@@ -113,7 +113,8 @@ class NomeDaClasse(val atributo: TipoAtributo) {
 
 ##### Object
 
-- Classe com comportamento Singleton
+- Classe com comportamento Singleton  
+- Não pode ter construtor
 
 ``` scala   
 object Nome {
@@ -136,6 +137,41 @@ abstract class Nome(val attr : Tipo)
 // Uso
 object NomeObject extends Nome("valor")
 ```
+
+### Case Classes
+
+``` scala
+case class Nome(value: String)
+
+val attr1 = Nome("valor1")
+val attr2 = Nome("valor2")
+
+attr1 == new Nome("valor1") // true
+attr2 == new Nome("valor2") // true
+attr1 == attr2 // false
+```
+
+##### Operador ==
+Invoca método equals das classes  
+Pode ser feita comparação por atributos
+
+##### Copy
+
+Cria um novo objeto copiando todos os valores  
+Pode-se trocar o valor de algum parâmetro
+
+``` scala
+case class Nome(value: String)
+
+val attr1 = Nome("valor1")
+val attr2 = attr1.copy(value="valor2")
+
+attr1 == attr2 // false
+
+```
+##### Pattern Matching
+
+
 
 
 
