@@ -221,6 +221,14 @@ case _ => false
 ```
 
 
+### Classes Básicas
+
+##### Option
+
+Classe base de SOME e NONE
 
 
+##### Some
+
+##### None
 
