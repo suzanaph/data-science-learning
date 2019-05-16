@@ -140,6 +140,9 @@ object NomeObject extends Nome("valor")
 
 ### Case Classes
 
+Gera diversos métodos utils
+
+
 ``` scala
 case class Nome(value: String)
 
@@ -169,8 +172,53 @@ val attr2 = attr1.copy(value="valor2")
 attr1 == attr2 // false
 
 ```
-##### Pattern Matching
 
+##### Apply
+
+Cria objetos  
+Funciona como Factory Method
+
+``` scala
+class Foto(val id: Int, val owner: String, val title: String, val
+farm: Int)
+object Foto {
+def apply(id: Int, owner: String, title: String, farm: Int) =
+new Foto(id, owner, title, farm)
+}
+
+//USO
+val foto = Foto(1, "jcranky", "foto do jcranky", 7)
+val foto = Foto.apply(1, "jcranky", "foto do jcranky", 7)
+```
+
+##### Unapply
+
+Extrai atributos de uma classe  
+Desconstrói objeto
+
+``` scala
+class Foto(val id: Int, val owner: String, val title: String, val
+farm: Int)
+
+object Foto {
+def unapply(foto: Foto): Option[(Int, String, String, Int)] =
+Some((foto.id, foto.owner, foto.title, foto.farm))
+}
+```
+
+### Pattern Matching
+
+``` scala
+
+case class Class1(id: Int, owner: String, title: String, farm: Int)
+
+val attr = Class1
+val teste = attr match {
+case Class1(_, "jcranky", _, _) => true
+case _ => false
+}
+
+```
 
 
 
