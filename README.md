@@ -11,6 +11,9 @@
       
 #### [Reforço de SQL + Report](https://github.com/suzanaph/data-science-portfolio/tree/master/SQL)
       Projeto pertencente ao curso Fundamentos de Data Science II (Udacity)
+
+#### [Scala](https://github.com/suzanaph/data-science-learning/tree/master/scala)
+      Estudo da linguagem Scala e suas bibliotecas, além da criação de funções úteis.
       
 ### 2. Análise de Dados
 #### [Análise simples utilizando Python e Jupyter Notebook para prática de reports](https://github.com/suzanaph/data-science-portfolio/blob/master/analise-de-dados/titanic/Report-titanic.ipynb)
