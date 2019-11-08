@@ -33,3 +33,41 @@ def int2date(argdate: int) -> date:
 
     return date(year, month, day)
 ```
+
+
+### Split Train x Test
+
+```python
+from sklearn.model_selection import train_test_split
+
+X_train, X_test, y_train, y_test = train_test_split(df.drop(columns=['class']), df['class'], test_size=0.3, random_state=42)
+
+```
+
+### Decision Tree 
+
+```python
+from sklearn import tree
+
+clf = tree.DecisionTreeClassifier()
+clf = clf.fit(X_train,  y_train)
+pred = clf.predict(X_test)
+```
+
+### SVM
+
+```python
+from sklearn import svm
+clf = svm.SVC(gamma='scale')
+clf.fit(X_train, y_train)
+
+pred = clf.predict(X_test)
+```
+
+### Get Accuracy
+
+```python
+from sklearn.metrics import accuracy_score
+accuracy_score(y_test, pred)
+```
+
