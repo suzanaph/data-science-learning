@@ -71,3 +71,14 @@ from sklearn.metrics import accuracy_score
 accuracy_score(y_test, pred)
 ```
 
+### All columns Lower Case
+
+```python
+data.columns = map(str.lower, data.columns)
+```
+
+### Display info for all columns
+
+```python
+df.info(verbose=True, null_counts=True)
+```
