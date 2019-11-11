@@ -132,3 +132,25 @@ X = pd.get_dummies(X, prefix_sep='_', drop_first=True)
 # X head
 X.head()
 ```
+
+### Kmeans K Value
+
+```python
+# calculate distortion for a range of number of cluster
+
+distortions = []
+for i in range(1, 11):
+    km = KMeans(
+        n_clusters=i, init='random',
+        n_init=10, max_iter=300,
+        tol=1e-04, random_state=0
+    )
+    km.fit(X)
+    distortions.append(km.inertia_)
+
+# plot
+plt.plot(range(1, 11), distortions, marker='o')
+plt.xlabel('Number of clusters')
+plt.ylabel('Distortion')
+plt.show()
+```
