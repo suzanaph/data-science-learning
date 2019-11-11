@@ -82,3 +82,53 @@ data.columns = map(str.lower, data.columns)
 ```python
 df.info(verbose=True, null_counts=True)
 ```
+
+### Get Categorical Features
+
+```python
+# Categorical boolean mask
+categorical_feature_mask = X.dtypes==object
+# filter categorical columns using mask and turn it into a list
+categorical_cols = X.columns[categorical_feature_mask].tolist()
+```
+
+### Label Enconder
+
+Melhor para atributos não binários
+
+```python
+# import labelencoder
+from sklearn.preprocessing import LabelEncoder
+# instantiate labelencoder object
+le = LabelEncoder()
+
+# apply le on categorical feature columns
+X[categorical_cols] = X[categorical_cols].apply(lambda col: le.fit_transform(col))
+X[categorical_cols].head(10)
+```
+
+### OneHotEncoder
+
+Para atributos multi classe
+```python
+# import OneHotEncoder
+from sklearn.preprocessing import OneHotEncoder
+# instantiate OneHotEncoder
+ohe = OneHotEncoder(categorical_features = categorical_feature_mask, sparse=False ) 
+# categorical_features = boolean mask for categorical columns
+# sparse = False output an array not sparse matrix
+# apply OneHotEncoder on categorical feature columns
+X_ohe = ohe.fit_transform(X) # It returns an numpy array
+```
+
+
+### Pandas Dummies
+
+Junta LabelEnconder e OneHotEnconder
+
+```python
+# Get dummies
+X = pd.get_dummies(X, prefix_sep='_', drop_first=True)
+# X head
+X.head()
+```
