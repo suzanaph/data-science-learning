@@ -86,3 +86,57 @@ Usos
 - Calculo resultante
 
 
+#### Variáveis
+
+```dax
+VAR
+    TotalSales = SUM ( Sales[SalesAmount] )
+RETURN
+    ( TotalSales - SUM ( Sales[TotalProductCost] ) ) / TotalSales
+```
+
+Lazy load
+Boa prática para otimização
+
+
+#### Erros
+
+Tipos:
+- Conversão
+- Aritmético
+- Missing Value
+
+Uso de ISERROR() ou IFERROR() function
+BLANK() é diferente de empty string
+ISBLANK() faz a verificação
+
+
+``` dax
+BLANK () + BLANK () = BLANK ()
+10 * BLANK () = BLANK ()
+BLANK () / 3 = BLANK ()
+BLANK () / BLANK () = BLANK ()
+BLANK () || BLANK () = FALSE
+BLANK () && BLANK () = FALSE
+BLANK () = BLANK () = TRUE
+
+BLANK () - 10 = -10
+18 + BLANK () = 18
+4 / BLANK () = Infinity
+0 / BLANK () = NaN
+FALSE || BLANK () = FALSE
+FALSE && BLANK () = FALSE
+TRUE || BLANK () = TRUE
+TRUE && BLANK () = FALSE
+```
+
+#### Identação
+
+DAXFormatter.com
+
+
+## Functions
+
+
+
+
