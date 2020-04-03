@@ -137,6 +137,46 @@ DAXFormatter.com
 
 ## Functions
 
+#### Agregados 
+SUM | AVERAGE | MIN | MAX SRDEV 
+COUNT | COUNTA | COUNTBLANK | COUNTROWS | DISTINCTCOUNT
+
+As funções agregadas que terminam com X computam a expressão do segundo parametro em todas as linhas e depois realiza a operação principal em todas essas linhas
+
+SUMX A AVERAGEX | PRODUCTX | COUNTX | COUNTAX | CONCATENATEX | MINX | MAXX
+
+#### Switch 
+
+Funciona como uma sequência de IFs
+
+```dax
+SizeDesc = 
+    SWITCH ( TRUE(),
+        "S", "Small",
+        "M", "Medium",
+        "L", "Large",
+        "XL", "Extra Large",
+        "Other"
+    )
+```
+Usar TRUE no primeiro parâmetro para retornar o primeira resultado
+
+#### Informacional
+
+Retorna boleano TRUE ou FALSE
+ISBLANK | ISERROR | ISLOGICAL | ISNONTEXT | ISNUMBER | ISTEXT
+
+#### Matemáticas
+
+Ex: ABS|  EXP | FACT | LN | LOG | LOG10 | MOD | PI | POWER | QUOTIENT | SIGN | SQRT
+
+#### Texto
+Ex: CONCATENATE, EXACT, FIND, FIXED, FORMAT, LEFT, LEN, LOWER, MID, REPLACE, REPT, RIGHT, SEARCH, SUBSTITUTE, TRIM, UPPER, and VALUE
+
+#### Conversão
+
+#### Date
+
 
 
 
