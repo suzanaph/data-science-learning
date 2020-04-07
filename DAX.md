@@ -8,6 +8,8 @@ Linguagem Funcional
 
 Usado para computar valores a partir de colunas de uma tabela. 
 
+Pode ser usado como linguagem de programação ou linguagem de query
+
 ## Sintaxe
 
 #### Colunas e Tabelas
@@ -177,6 +179,74 @@ Ex: CONCATENATE, EXACT, FIND, FIXED, FORMAT, LEFT, LEN, LOWER, MID, REPLACE, REP
 
 #### Date
 
+## Funções de Tabela
 
+Tem como retorno uma tabela e não um escalar
+
+Exemplo:
+
+```dax
+= FILTER (
+Sales,
+Sales[Unit Price] > 100
+)
+```
+
+#### EVALUATE
+
+```dax
+#Retorna todas as colunas e linhas da tabela Product
+
+EVALUATE Product
+
+```
+
+#### FILTER
+
+Funciona como where
+Retorna tabela com mesmas colunas da tabela original e as linhas que satisfazem a condição
+
+```dax
+FILTER ( <table>, <condition> )
+FILTER ( <table>, AND ( <condition1>, < condition2> ) )
+FILTER ( FILTER ( <table>, < condition1> ), < condition2> ) )
+```
+
+
+#### RELATEDTABLE
+
+Usado para referir a uma tabela fora do conexto atual onde está definindo a expressão
+
+
+#### ALL
+
+Retorna todas as linhas ou todas as colunas de uma tabela
+
+```dax
+EVALUATE
+ALL ( Product )
+
+EVALUATE
+ALL ( Product[Class] )
+
+EVALUATE
+ALL ( Product[Class], Product[Color] )
+ORDER BY Product[Color]
+
+```
+
+#### ALLEXCEPT
+
+Retorna todos, menos a condição
+
+```dax
+EVALUATE ALLEXCEPT ( Product, Product[ProductKey], Product[Color] )
+```
+
+
+#### VALUES E DISTINCT
+
+VALUES considera o Blank e distinct não
+Retornam os valores únicos
 
 
