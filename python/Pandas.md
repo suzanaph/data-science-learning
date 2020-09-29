@@ -1,3 +1,44 @@
+# Pandas
+Notes of my Pandas Studies
+
+## Objects
+
+### Series
+
+- Series is 1D object numpy.ndarray
+- Series is like dict
+- Series can work in most NumPy methods
+- Series can do operations like -> serie + serie / serie * 5
+
+```python
+pd.Series(data, index=index)
+```
+
+index has to be the same length as data. Index can be integer, char, string...
+If no index passed = ordinal default
+
+#### From dict
+
+```python
+d = {'a': 0., 'b': 1., 'c': 2.}
+pd.Series(d)
+```
+
+key will be the index
+
+
+### DataFrame
+
+-  2D object like dict of numpy.ndarray
+- Index: Row Labels
+- Columns: Columns Labels
+
+
+
+
+
+------
+
 ### Merge por data mais próxima
 
 ```python
